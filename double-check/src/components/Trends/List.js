@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import { ListImg, Percent, TDiv, Title } from "./TrendsStyle";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function List() {
   const { id } = useParams();
@@ -29,15 +29,17 @@ function List() {
     <>
       <div>
         {datas.video_data &&
-          datas.video_data.map((item) => (
-            <div>
-              <ListImg src={item.thumbnail_url}></ListImg>
-              <TDiv>
-                <Title>{item.title}</Title>
-                <Percent>70%</Percent>
-              </TDiv>
-            </div>
-          ))}
+          datas.video_data.map((item) => {
+            return (
+              <Link to="/">
+                <ListImg src={item.thumbnail_url}></ListImg>
+                <TDiv>
+                  <Title>{item.title}</Title>
+                  <Percent>70%</Percent>
+                </TDiv>
+              </Link>
+            );
+          })}
       </div>
     </>
   );
