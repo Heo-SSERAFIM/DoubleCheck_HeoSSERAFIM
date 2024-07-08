@@ -28,13 +28,6 @@
 |  <center></center> |<center></center> |<center></center> | # 이미지 삽입
 | 뭐했는지 | 허위 탐지 모델 개발 | 작성하세요|
 
-### Infra
-
-| 허은 |
-| --- |
-|  <center></center> | # 이미지 삽입
-| 뭐했는지 | 
-
 
 # ✅ About Service
 
